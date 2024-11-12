@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your EHS Advisor</title>
+    <!-- Include Tailwind CSS from a CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans leading-relaxed text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-blue-800 text-white py-6 text-center">
+        <h1 class="text-3xl font-semibold">Your EHS Advisor</h1>
+        <p class="text-lg mt-2">Expert Guidance in Environment, Health, and Safety</p>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav class="bg-gray-800 text-white py-4">
+        <ul class="flex justify-center space-x-8">
+            <li><a href="#home" class="hover:text-yellow-400">Home</a></li>
+            <li><a href="#about" class="hover:text-yellow-400">About Me</a></li>
+            <li><a href="#services" class="hover:text-yellow-400">Services</a></li>
+            <li><a href="#contact" class="hover:text-yellow-400">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="py-12 text-center">
+        <h2 class="text-2xl font-semibold text-blue-800">Welcome to Your EHS Advisor</h2>
+        <p class="mt-4 text-lg text-gray-600">Providing personalized solutions for a safe and compliant environment.</p>
+        <a href="#contact" class="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Get in Touch</a>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-12 bg-white text-center">
+        <h2 class="text-2xl font-semibold text-blue-800">About Me</h2>
+        <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">With years of experience in environmental health and safety, I am dedicated to helping organizations achieve compliance and create safe workspaces. Certified in various EHS fields, I bring a personalized approach to every project.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-12 text-center">
+        <h2 class="text-2xl font-semibold text-blue-800">Services Offered</h2>
+        <ul class="mt-6 space-y-4 text-lg text-gray-600">
+            <li>Risk Assessments</li>
+            <li>Safety Audits</li>
+            <li>Environmental Compliance</li>
+            <li>Training and Consultation</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-12 bg-white text-center">
+        <h2 class="text-2xl font-semibold text-blue-800">Contact Me</h2>
+        <form class="mt-6 max-w-xl mx-auto bg-gray-50 p-6 rounded-lg shadow-lg">
+            <label for="name" class="block text-left text-lg font-semibold">Name:</label>
+            <input type="text" id="name" name="name" required class="w-full p-3 mt-2 border border-gray-300 rounded-lg">
+
+            <label for="email" class="block text-left text-lg font-semibold mt-4">Email:</label>
+            <input type="email" id="email" name="email" required class="w-full p-3 mt-2 border border-gray-300 rounded-lg">
+
+            <label for="message" class="block text-left text-lg font-semibold mt-4">Message:</label>
+            <textarea id="message" name="message" rows="4" required class="w-full p-3 mt-2 border border-gray-300 rounded-lg"></textarea>
+
+            <button type="submit" class="w-full mt-6 bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-blue-800 text-white text-center py-4">
+        <p>&copy; 2024 Your EHS Advisor. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>
