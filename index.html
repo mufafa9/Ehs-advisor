@@ -3,242 +3,220 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your EHS Advisor</title>
-    <style>
-        /* General Styles */
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: system-ui, -apple-system, sans-serif;
-            line-height: 1.5;
-            color: #2d3748;
-            background-color: #f7fafc;
-        }
-
-        /* Header Styles */
-        header {
-            background-color: #2c5282;
-            color: white;
-            padding: 1.5rem 0;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 1.875rem;
-            font-weight: 600;
-            margin: 0;
-        }
-
-        header p {
-            font-size: 1.125rem;
-            margin-top: 0.5rem;
-        }
-
-        /* Navigation Styles */
-        nav {
-            background-color: #2d3748;
-            color: white;
-            padding: 1rem 0;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-        }
-
-        nav a:hover {
-            color: #fbbf24;
-        }
-
-        /* Section Styles */
-        section {
-            padding: 3rem 0;
-            text-align: center;
-        }
-
-        section h2 {
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: #2c5282;
-            margin: 0;
-        }
-
-        section p {
-            margin-top: 1rem;
-            font-size: 1.125rem;
-            color: #4a5568;
-        }
-
-        /* Home Section */
-        #home a {
-            display: inline-block;
-            margin-top: 1.5rem;
-            background-color: #2563eb;
-            color: white;
-            padding: 0.75rem 1.5rem;
-            border-radius: 0.5rem;
-            text-decoration: none;
-        }
-
-        #home a:hover {
-            background-color: #1d4ed8;
-        }
-
-        /* About Section */
-        #about {
-            background-color: white;
-        }
-
-        #about p {
-            max-width: 48rem;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        /* Services Section */
-        #services ul {
-            margin-top: 1.5rem;
-            list-style: none;
-            padding: 0;
-            font-size: 1.125rem;
-            color: #4a5568;
-        }
-
-        #services li {
-            margin: 1rem 0;
-        }
-
-        /* Contact Section */
-        #contact {
-            background-color: white;
-        }
-
-        form {
-            margin-top: 1.5rem;
-            max-width: 36rem;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: #f8fafc;
-            padding: 1.5rem;
-            border-radius: 0.5rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        label {
-            display: block;
-            text-align: left;
-            font-size: 1.125rem;
-            font-weight: 600;
-        }
-
-        input, textarea {
-            width: 100%;
-            padding: 0.75rem;
-            margin-top: 0.5rem;
-            margin-bottom: 1rem;
-            border: 1px solid #cbd5e0;
-            border-radius: 0.5rem;
-            box-sizing: border-box;
-        }
-
-        button {
-            width: 100%;
-            margin-top: 1.5rem;
-            background-color: #2563eb;
-            color: white;
-            padding: 0.75rem;
-            border: none;
-            border-radius: 0.5rem;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #1d4ed8;
-        }
-
-        /* Footer Styles */
-        footer {
-            background-color: #2c5282;
-            color: white;
-            text-align: center;
-            padding: 1rem 0;
-        }
-
-        footer p {
-            margin: 0;
-        }
-    </style>
+    <meta name="description" content="Syed Tanweer Sabzwari - Expert EHS Consultant with 20+ years experience in OGDCL, ADNOC, and Aramco">
+    <title>Syed Tanweer Sabzwari - EHS Consultant & Trainer</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <h1>Your EHS Advisor</h1>
-        <p>Expert Guidance in Environment, Health, and Safety</p>
+    <header class="header">
+        <div class="header-content">
+            <a href="index.html" class="logo">
+                <span class="logo-initials">TS</span>
+                <div class="logo-text">
+                    <h1>Syed Tanweer Sabzwari</h1>
+                    <span class="title-suffix">EHS Consultant & Trainer</span>
+                </div>
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav" id="mainNav">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+        </div>
     </header>
 
-    <!-- Navigation Section -->
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <main class="main-content">
+        <section class="hero">
+            <div class="hero-content">
+                <h2 class="animate-fade-in"> EHS Training & Consultation</h2>
+                <p class="animate-fade-in">Leveraging 20 years of international experience from leading energy companies to provide comprehensive EHS training and consultation services.</p>
+                <div class="hero-cta animate-fade-in">
+                    <a href="#contact" class="btn btn-primary">Schedule a Consultation</a>
+                    <a href="#services" class="btn btn-secondary">Explore Services</a>
+                </div>
+            </div>
+        </section>
 
-    <!-- Home Section -->
-    <section id="home">
-        <h2>Welcome to Your EHS Advisor</h2>
-        <p>Providing personalized solutions for a safe and compliant environment.</p>
-        <a href="#contact">Get in Touch</a>
-    </section>
+        <section id="about" class="section about-section">
+            <div class="section-container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="IMG-20220721-WA0047.jpg" alt="Syed Tanweer Sabzwari" class="profile-image">
+                    </div>
+                    <div class="about-text">
+                        <p class="lead-text">Dedicated EHS professional with extensive experience in the oil & gas industry across Pakistan, UAE, and Saudi Arabia.</p>
+                        <div class="credentials">
+                            <div class="credential-item">
+                                <i class="fas fa-user-graduate"></i>
+                                <span>M.Phil Environment Health Safety Management</span>
+                            </div>
+                            <div class="credential-item">
+                                <i class="fas fa-certificate"></i>
+                                <span </span>
+                            </div>
+                            <div class="credential-item">
+                                <i class="fas fa-award"></i>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- About Me Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>With years of experience in environmental health and safety, I am dedicated to helping organizations achieve compliance and create safe workspaces. Certified in various EHS fields, I bring a personalized approach to every project.</p>
-    </section>
+        <section id="experience" class="section experience-section">
+            <div class="section-container">
+                <h2 class="section-title">Professional Experience</h2>
+                <div class="experience-timeline">
+                    <div class="experience-card">
+                        <img src="/api/placeholder/80/80" alt="Saudi Aramco logo" class="company-logo">
+                        <div class="experience-content">
+                            <h3>Saudi Aramco</h3>
+                            <p class="position">EHS Consultant</p>
+                            <p class="experience-description"></p>
+                        </div>
+                    </div>
+                    <div class="experience-card">
+                        <img src="/api/placeholder/80/80" alt="ADNOC logo" class="company-logo">
+                        <div class="experience-content">
+                            <h3>ADNOC UAE</h3>
+                            <p class="position"></p>
+                            <p class="</p>
+                        </div>
+                    </div>
+                    <div class="experience-card">
+                        <img src="/api/placeholder/80/80" alt="OGDCL logo" class="company-logo">
+                        <div class="experience-content">
+                            <h3>OGDCL Pakistan</h3>
+                            <p class="position"></p>
+                            <p class="experience-description"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Services Section -->
-    <section id="services">
-        <h2>Services Offered</h2>
-        <ul>
-            <li>Risk Assessments</li>
-            <li>Safety Audits</li>
-            <li>Environmental Compliance</li>
-            <li>Training and Consultation</li>
-        </ul>
-    </section>
+        <section id="services" class="section services-section">
+            <div class="section-container">
+                <h2 class="section-title">Training & Certification Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <i class="fas fa-certificate service-icon"></i>
+                        <h3>NEBOSH Certification</h3>
+                        <ul class="service-list">
+                            <li>IGC 1, 2, and 3 Preparation</li>
+                            <li>Exam Guidance</li>
+                            <li>Practice Assessments</li>
+                            <li>Study Materials</li>
+                        </ul>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-shield-alt service-icon"></i>
+                        <h3>IOSH & OSHA Training</h3>
+                        <ul class="service-list">
+                            <li>Managing Safely</li>
+                            <li>Working Safely</li>
+                            <li>OSHA 30-Hour Course</li>
+                            <li>Industry-Specific Training</li>
+                        </ul>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-tasks service-icon"></i>
+                        <h3>ISO Certification</h3>
+                        <ul class="service-list">
+                            <li>Implementation Support</li>
+                            <li>Documentation Review</li>
+                            <li>Internal Auditor Training</li>
+                            <li>Gap Analysis</li>
+                        </ul>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-users service-icon"></i>
+                        <h3>HABC Certification</h3>
+                        <ul class="service-list">
+                            <li>Level 1-4 Preparation</li>
+                            <li>Customized Training</li>
+                            <li>Assessment Support</li>
+                            <li>Certification Guidance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+        <section id="contact" class="section contact-section">
+            <div class="section-container">
+                <h2 class="section-title">Get in Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <div class="contact-details">
+                            <p><i class="fas fa-envelope"></i> Email: contact@tanweersabzwari.com</p>
+                            <p><i class="fas fa-phone"></i> Phone: [Your phone number]</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Location: [Your location]</p>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">Select Service</option>
+                                <option value="nebosh">NEBOSH Certification</option>
+                                <option value="iosh">IOSH Training</option>
+                                <option value="iso">ISO Certification</option>
+                                <option value="habc">HABC Certification</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2024 Your EHS Advisor. All rights reserved.</p>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Syed Tanweer Sabzwari. All rights reserved.</p>
+        </div>
     </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mainNav = document.getElementById('mainNav');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mainNav.classList.toggle('active');
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
