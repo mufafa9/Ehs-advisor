@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Enter your description here, such as 'Your profession or expertise'">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Enter your description here, such as 'Your profession or expertise'" />
     <title>Enter Your Title Here</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 </head>
+
 <body>
     <header class="header">
         <div class="header-content">
             <a href="index.html" class="logo">
-                <span class="logo-initials">[Your Initials]</span>
+                <span class="logo-initials">TS</span>
                 <div class="logo-text">
                     <h1>Enter your personal message or slogan here.</h1>
                     <span class="title-suffix">EHS Consultant & Trainer</span>
@@ -35,7 +37,9 @@
         <section class="hero">
             <div class="hero-content">
                 <h2 class="animate-fade-in">Write your catchy headline here.</h2>
-                <p class="animate-fade-in">You can add a brief description of your expertise or services.</p>
+                <p class="animate-fade-in">
+                    You can add a brief description of your expertise or services.
+                </p>
                 <div class="hero-cta animate-fade-in">
                     <a href="#contact" class="btn btn-primary">Call to action button text</a>
                     <a href="#services" class="btn btn-secondary">Explore Services</a>
@@ -48,10 +52,13 @@
                 <h2 class="section-title">About Me</h2>
                 <div class="about-content">
                     <div class="about-image">
-                        <img src="your-image.jpg" alt="Your Name" class="profile-image">
+                        <img src="IMG-20220721-WA0047.jpg" alt="Your Name" class="profile-image" />
                     </div>
                     <div class="about-text">
-                        <p class="lead-text">Write a brief introduction about yourself, your background, and expertise.</p>
+                        <p class="lead-text">
+                            Write a brief introduction about yourself, your background, and
+                            expertise.
+                        </p>
                         <div class="credentials">
                             <div class="credential-item">
                                 <i class="fas fa-user-graduate"></i>
@@ -59,7 +66,7 @@
                             </div>
                             <div class="credential-item">
                                 <i class="fas fa-certificate"></i>
-                                <span>Your certifications</span>  
+                                <span>Your certifications</span>
                             </div>
                             <div class="credential-item">
                                 <i class="fas fa-award"></i>
@@ -77,11 +84,13 @@
                 <div class="experience-timeline">
                     <!-- Repeat the below div for each experience -->
                     <div class="experience-card">
-                        <img src="company-logo.jpg" alt="Company Name" class="company-logo">
+                        <img src="company-logo.jpg" alt="Company Name" class="company-logo" />
                         <div class="experience-content">
                             <h3>Company Name</h3>
                             <p class="position">Your job position</p>
-                            <p class="experience-description">Briefly describe your role and accomplishments.</p>
+                            <p class="experience-description">
+                                Briefly describe your role and accomplishments.
+                            </p>
                         </div>
                     </div>
                     <!-- Add more experience cards as needed -->
@@ -116,9 +125,15 @@
                     <div class="contact-info">
                         <h3>Contact Information</h3>
                         <div class="contact-details">
-                            <p><i class="fas fa-envelope"></i> Email: [your-email@example.com]</p>
+                            <p>
+                                <i class="fas fa-envelope"></i> Email:
+                                [your-email@example.com]
+                            </p>
                             <p><i class="fas fa-phone"></i> Phone: [your-phone-number]</p>
-                            <p><i class="fas fa-map-marker-alt"></i> Location: [your-location]</p>
+                            <p>
+                                <i class="fas fa-map-marker-alt"></i> Location:
+                                [your-location]
+                            </p>
                         </div>
                         <div class="social-links">
                             <a href="[your-linkedin-url]" class="social-link"><i class="fab fa-linkedin"></i></a>
@@ -127,10 +142,10 @@
                     </div>
                     <form class="contact-form">
                         <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
+                            <input type="text" placeholder="Your Name" required />
                         </div>
                         <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
+                            <input type="email" placeholder="Your Email" required />
                         </div>
                         <div class="form-group">
                             <select required>
@@ -144,7 +159,9 @@
                         <div class="form-group">
                             <textarea placeholder="Your Message" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <button type="submit" class="btn btn-primary">
+                            Send Message
+                        </button>
                     </form>
                 </div>
             </div>
@@ -159,22 +176,23 @@
 
     <script>
         // Mobile Menu Toggle
-        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        const mainNav = document.getElementById('mainNav');
+        const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+        const mainNav = document.getElementById("mainNav");
 
-        mobileMenuBtn.addEventListener('click', () => {
-            mainNav.classList.toggle('active');
+        mobileMenuBtn.addEventListener("click", () => {
+            mainNav.classList.toggle("active");
         });
 
         // Smooth scroll for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+            anchor.addEventListener("click", function (e) {
                 e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
+                document.querySelector(this.getAttribute("href")).scrollIntoView({
+                    behavior: "smooth",
                 });
             });
         });
     </script>
 </body>
+
 </html>
